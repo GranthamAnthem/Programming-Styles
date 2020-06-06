@@ -23,7 +23,7 @@ public class TwentySeven {
 
     public static Stream<String> nonStopWords(String fileName) throws IOException {
 
-        Set<String> stopWords = Files.lines(Paths.get("stop-words.txt"))
+        Set<String> stopWords = Files.lines(Paths.get("../stop-words.txt"))
                 .flatMap(Pattern.compile("\\s*,\\s*")::splitAsStream)
                 .collect(Collectors.toSet());
 
