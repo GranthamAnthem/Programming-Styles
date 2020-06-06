@@ -45,7 +45,7 @@ public class TwentyTwo {
         }
 
         Scanner scan = null;
-        scan = new Scanner(new File("stop-words.txt"));
+        scan = new Scanner(new File("../stop-words.txt"));
         scan.useDelimiter(",");
 
         while(scan.hasNext()) {
