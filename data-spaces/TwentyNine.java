@@ -41,7 +41,7 @@ public class TwentyNine {
     }
 
     private void loadStopWords() throws IOException {
-        BufferedReader br = new BufferedReader(new FileReader("stop-words.txt"));
+        BufferedReader br = new BufferedReader(new FileReader("../stop-words.txt"));
         String line = "";
         while((line = br.readLine()) != null) {
             String[] arrayStopWords = line.split(",");
