@@ -55,7 +55,7 @@ public class Twenty {
 
         Scanner scan = null;
         try {
-            scan = new Scanner(new File("stop-words.txt"));
+            scan = new Scanner(new File("../stop-words.txt"));
         } catch (FileNotFoundException e) {
             System.out.println("Error when opening file: " + e.getMessage());
             return updatedWords;
