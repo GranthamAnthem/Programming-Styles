@@ -176,7 +176,7 @@ class StopWordManager implements IStopWordFilter{
     public StopWordManager() throws IOException {
         this.stopWords = new HashSet<>();
 
-        BufferedReader br = new BufferedReader(new FileReader("stop-words.txt"));
+        BufferedReader br = new BufferedReader(new FileReader("../stop-words.txt"));
         String line = "";
         while((line = br.readLine()) != null) {
             String[] stopWords = line.split(",");
