@@ -70,7 +70,7 @@ class StopWords implements iFunction {
 class RemoveStopWords implements iFunction {
     public void call (Object arg, iFunction func) throws IOException {
         Map<String, Integer> countMap = (Map<String, Integer>) arg;
-        BufferedReader br = new BufferedReader(new FileReader("stop-words.txt"));
+        BufferedReader br = new BufferedReader(new FileReader("../stop-words.txt"));
         String line = "";
         while((line = br.readLine()) != null) {
             String[] stopWords = line.split(",");
