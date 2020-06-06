@@ -1,3 +1,3 @@
-Lazy River / Data Flow Style
+Lazy River / Dataflow Style
 
 javac TwentySeven.java ../pride-and-prejudice.txt
