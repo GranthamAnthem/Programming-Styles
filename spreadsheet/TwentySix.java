@@ -97,7 +97,7 @@ public class TwentySix {
                     .filter(word -> word.length() >= 2)
                     .collect(Collectors.toList());
 
-            stopWords[0] = Files.lines(Paths.get("stop-words.txt"))
+            stopWords[0] = Files.lines(Paths.get("../stop-words.txt"))
                     .flatMap(Pattern.compile("\\s*,\\s*")::splitAsStream)
                     .collect(Collectors.toSet());
 
