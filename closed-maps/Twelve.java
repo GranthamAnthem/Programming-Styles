@@ -106,7 +106,7 @@ public class Twelve {
 
     public static void loadStopWords(HashMap<String, Object> stopWordsObj) throws IOException {
         Set<String> stopWords = new HashSet<>();
-        BufferedReader br = new BufferedReader(new FileReader("stop-words.txt"));
+        BufferedReader br = new BufferedReader(new FileReader("../stop-words.txt"));
         String line = "";
         while((line = br.readLine()) != null) {
             String[] stop = line.split(",");
