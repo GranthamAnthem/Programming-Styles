@@ -11,4 +11,4 @@ javac -cp ../framework/framework.jar *.java<br />
 jar cf app2.jar *.class<br />
 cd ../deploy<br />
 cp ../framework/*.jar ../app1/*.jar ../app2/*.jar .<br />
-java -jar framework.jar /Users/Nicolas/Desktop/programming-styles/Week7/src/framework/pride-and-prejudice.txt
+java -jar framework.jar ../../../pride-and-prejudice.txt
