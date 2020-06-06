@@ -48,7 +48,7 @@ public class Four {
 
     // Remove all Stop Words from HashMap
     public static void removeStopWords() throws IOException {
-        BufferedReader br = new BufferedReader(new FileReader("stop-words.txt"));
+        BufferedReader br = new BufferedReader(new FileReader("../stop-words.txt"));
         String line = "";
         while((line = br.readLine()) != null) {
             String[] stopWords = line.split(",");
