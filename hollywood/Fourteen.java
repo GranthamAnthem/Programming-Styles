@@ -131,7 +131,7 @@ class StopWordFilter {
 
     Function<String, Object> load = (filepath) -> {
         stopWords = new HashSet<>();
-        filepath = "stop-words.txt";
+        filepath = "../stop-words.txt";
 
         BufferedReader br = null;
         try {
