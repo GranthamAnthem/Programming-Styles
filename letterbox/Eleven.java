@@ -47,7 +47,7 @@ class WordFrequencyController {
 
     private void run() throws IOException {
         for (String word: storeManager.dispatch("words")) {
-            if(!stopWordManager.dispatch("stop-words", word)) {
+            if(!stopWordManager.dispatch("../stop-words", word)) {
                 wordFrequencyManager.dispatch("count-frequencies", word);
             }
         }
