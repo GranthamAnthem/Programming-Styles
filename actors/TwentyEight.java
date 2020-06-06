@@ -178,7 +178,7 @@ class StopWordManager extends ActiveWTFObject{
     }
 
     private void loadStopWords(Message message) throws IOException {
-        BufferedReader br = new BufferedReader(new FileReader("stop-words.txt"));
+        BufferedReader br = new BufferedReader(new FileReader("../stop-words.txt"));
         String line = "";
         while((line = br.readLine()) != null) {
             String[] stopWords = line.split(",");
